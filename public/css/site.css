@@ -1,0 +1,38 @@
+body{margin:10px;}
+
+div#wrapper, div#header, div#content, div#footer{float:left; width:100%; margin:0px; padding:0px;}
+
+div#wrapper{width:96%; padding-left:2%;}
+
+header{
+  background-color: #000; border-radius: 4px 4px 0px 0px
+  }
+  header>h1{margin:0px; padding:5px 10px; color:#fff;}
+
+div#content{background-color: #f2f2f2}
+
+div#content h1{color:#666; border-bottom:thin solid #ececec;}
+.content-padding{padding:10px;}
+
+
+div#workspace{float:left; width:100%; background-color: #fff; border:1px solid #000; margin-bottom:10px;}
+
+div#examples{float:left; width:100%; background-color: #F7F5D7; border:1px solid #ccc; margin-bottom:10px;}
+
+div#instructions{float:left; width:100%; background-color: #fff; border:thin solid #ccc;}
+
+footer{
+  float: left;
+  text-align: center;
+  width: 100%;
+  background-color: #ececec; 
+  border-radius: 0px 0px 4px 4px; 
+  text-align: center; 
+  padding:0px;
+  border-top: thin solid #ccc
+}
+
+
+p.note{background-color: #F7F5D7; border:1px solid #ccc; margin-bottom:10px; padding:4px;}
+p.note>.shout{font-size: 1.2em; color:#cc0000;}
+.padded-content {padding:10px; float: left;}

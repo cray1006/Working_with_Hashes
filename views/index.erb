@@ -1,0 +1,34 @@
+<h1>Pages</h1>
+
+<ul>
+  <li><a href="/states">Here is drop down select box of states</a></li>
+</ul>
+
+<p class="note">Here is the output of that variable:
+  <i><%= @varaible_for_view %></i>
+  </p>
+<p class="note">Here, the output of that variable is suppressed because there is no '=': <% @varaible_for_view %></p>
+
+
+<p>If you want to loop in an ERB file, check the source code for this file (views/index.erb)</p>
+<ul>
+  <% @people.each do | person | %>
+    <li><%= person %></li>
+  <% end %>
+</ul>
+
+<ol>
+  <li>Open the run.rb file in your text editor</li>
+  <li>Follow the instructions for each step in the Readm.md file.</li>
+  <li>When looping through the arrays, you will use &lt;% %> and &lt;%= %> (the = means that content will be written to the screen).</li>
+
+
+  <li>Once you have completed all steps and are ready to turn the assignment in:
+    <ol>
+      <li>Make sure you add the files to your working copy with git add .</li>
+      <li>Commit your work using git commit -am 'your commit message'</li>
+      <li>Tag your files as 'completed'</li>
+      <li>Make sure your work and tags are all pushed to github</li>
+    </ol>
+  </li>
+</ol>
