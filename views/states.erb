@@ -2,5 +2,11 @@
 
 <p>here is a list of states...</p>
 
+<select>
+	<% @states.each do |x| %>
+	<option value = <%= x[:id]%> > <%= x[:name]%> </option>
+	<%end%>
+</select>
+
 <!-- iterate through each state in the array and put them into list items individually -->
 

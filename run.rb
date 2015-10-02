@@ -9,5 +9,20 @@ end
 
 get '/states' do
   # code!
+  @states = []
+  state1 = {:id => "CA", :name => "California"}
+  state2 = {:id => "VA", :name => "Virgina"}
+  state3 = {:id => "HI", :name => "Hawaii"}
+  state4 = {:id => "NM", :name => "New Mexico"}
+  state5 = {:id => "TX", :name => "Texas"}
+  
+  @states << state1
+  @states << state2
+  @states << state3
+  @states << state4
+  @states << state5
+  
+  @states.sort_by!{|x| x.}
+  
   erb :states, layout: :main
 end
