@@ -22,7 +22,7 @@ get '/states' do
   @states << state4
   @states << state5
   
-  @states.sort_by!{|x| x.}
+  @states.sort_by!{|x| x[:name]}
   
   erb :states, layout: :main
 end
