@@ -10,19 +10,17 @@ end
 get '/states' do
   # code!
   @states = []
-  state1 = {:id => "CA", :name => "California"}
-  state2 = {:id => "VA", :name => "Virgina"}
-  state3 = {:id => "HI", :name => "Hawaii"}
-  state4 = {:id => "NM", :name => "New Mexico"}
-  state5 = {:id => "TX", :name => "Texas"}
+  state_list = ["California", "Virginia", "Hawaii", "New Mexico", "Texas"]  #array to hold state names
+  id_list = ["CA", "VA", "HI", "NM", "TX"]  #array to hold state id's
   
-  @states << state1
-  @states << state2
-  @states << state3
-  @states << state4
-  @states << state5
+  0.upto(state_list.count - 1) do |x| #iterate through the name and id arrays
+    state = {}  #create empty hash
+    state[:id] = id_list[x] #add id and name to hash
+    state[:name] = state_list[x]
+    @states << state  #append hash to @states array
+  end
   
-  @states.sort_by!{|x| x[:name]}
+  @states.sort_by!{|x| x[:name]}  #sorting @states by name
   
   erb :states, layout: :main
 end
